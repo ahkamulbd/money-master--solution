@@ -19,6 +19,64 @@
         <h1 class="text-4xl font-bold text-teal-500 mr-1">Money Master</h1>
         <p><i class="fa-solid fa-sack-dollar text-4xl ml-1 text-amber-500"></i></p>
     </header>
+    <main class="grid grid-cols-2 gap-6 justify-center w-10/12 mx-10">
+        <section class="w-full ml-10">
+            <img src="images/moneyMasterNew.jpg" alt="Money Master" width="1000" height="700">
+        </section>
+
+        <!-- Income Portion -->
+        <section class="bg-slate-200 w-11/12 ml-10 pl-10 pt-10">
+            <div>
+                <h1 class="text-3xl font-semibold text-center my-3">Income</h1>
+                <div class="flex flex-row justify-center my-3">
+                    <h3 class="text-2xl font-semibold mx-3">Income</h3>
+                    <input class="px-5 py-2" type="text">
+                </div>
+            </div>
+
+            <!-- Expense Portion -->
+            <div>
+                <h1 class="text-3xl font-semibold text-center my-3">Expenses</h1>
+                <div class="flex flex-row justify-center my-3">
+                    <h3 class="text-2xl font-semibold mx-3">Food</h3>
+                    <input id="food-expense" class="px-5 py-2" type="text">
+                </div>
+                <div class="flex flex-row justify-center my-3">
+                    <h3 class="text-2xl font-semibold mx-3">Rent</h3>
+                    <input id="rent-expense" class="px-5 py-2" type="text">
+                </div>
+                <div class="flex flex-row justify-center my-3">
+                    <h3 class="text-2xl font-semibold mx-3">Clothes</h3>
+                    <input id="clothes-expense" class="px-5 py-2" type="text">
+                </div>
+                <button id="calculate-btn"
+                    class="bg-blue-700 text-white text-3xl self-center font-semibold px-7 py-2 my-3 block rounded justify-center">Calculate</button>
+                <h1 class="text-3xl font-semibold text-center my-3">Total Expenses: <span id="total-expense">00</span>
+                </h1>
+                <h1 class="text-3xl font-semibold text-center my-3">Balance: <span>00</span></h1>
+            </div>
+
+            <!-- Saving Portion -->
+            <div>
+                <div class="flex flex-row justify-center">
+                    <h3 class="text-2xl mx-2 my-2">Save:</h3>
+                    <button class="bg-slate-300 text-2xl mx-2 px-7 py-1 my-2">20</button>
+                    <h3 class="text-2xl mx-2 my-2">%</h3>
+                    <button class="bg-blue-700 text-white text-3xl self-center font-semibold px-7 py-1 my-2">Save
+                    </button>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-semibold text-center my-3">Saving Amount : <span>00</span></h1>
+                    <h1 class="text-3xl font-semibold text-center my-3">Remaining Balance : <span>00</span></h1>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Script Link: -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
